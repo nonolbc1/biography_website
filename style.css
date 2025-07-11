@@ -1,0 +1,107 @@
+body {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header  {
+    border: 1px solid #2c2c2c;
+    padding: 10px;
+    max-width: auto;
+    background-color: #1a1a1a;
+    display: flex;
+}
+
+header #title {
+    margin-right: auto;
+    font-size: 0.8em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header #langue-selector {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+select {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+main .title {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 0 0 2px #ffc0cc, 0 0 4px #ffc0cc;
+  margin-top: 40px;
+}
+
+main #desc {
+    border: 1px solid #ff0000;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+
+    box-shadow:
+        0 0 1px #ff0000,
+        0 0 5px #ff0000;
+}
+
+main #_00003 {
+    margin-top: -5px;
+    text-align: center;
+}
+
+main .reseaux {
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid #2c2c2c;
+    padding: 10px;
+    max-width: 500px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+
+main .reseau {
+    border: 1px solid #ff0000;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+
+    box-shadow:
+        0 0 1px #ff0000,
+        0 0 5px #ff0000;
+
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+main .text {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 22px;
+}
+
+main .img {
+    width: 65px;
+    height: 65px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.reseau:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #ff0033;
+}
