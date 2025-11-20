@@ -13,14 +13,14 @@ header  {
     display: flex;
 }
 
-header #title {
+#title {
     margin-right: auto;
     font-size: 0.8em;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-header #langue-selector {
+#langue-selector {
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
@@ -31,7 +31,7 @@ select {
     color: #e0e0e0;
 }
 
-main .title {
+.title {
   font-family: 'Segoe UI', sans-serif;
   font-size: 3em;
   text-align: center;
@@ -39,7 +39,7 @@ main .title {
   margin-top: 40px;
 }
 
-main #desc {
+#desc {
     border: 1px solid #ff0000;
     padding: 20px;
     margin: 20px auto;
@@ -52,12 +52,12 @@ main #desc {
         0 0 5px #ff0000;
 }
 
-main #_00003 {
+#_00003 {
     margin-top: -5px;
     text-align: center;
 }
 
-main .reseaux {
+#socials-networks {
     text-align: center;
     margin: 20px auto;
     border: 1px solid #2c2c2c;
@@ -67,7 +67,7 @@ main .reseaux {
     border-radius: 10px;
 }
 
-main .reseau {
+.social-network {
     border: 1px solid #ff0000;
     padding: 20px;
     margin: 20px auto;
@@ -85,23 +85,23 @@ main .reseau {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-main .text {
+.social-network:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #ff0033;
+}
+
+.text {
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
     font-size: 22px;
 }
 
-main .img {
+.img {
     width: 65px;
     height: 65px;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-}
-
-.reseau:hover {
-  background-color: #1a1a1a;
-  transform: scale(1.02);
-  box-shadow: 0 0 10px #ff0033;
 }

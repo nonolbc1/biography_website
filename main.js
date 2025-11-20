@@ -4,14 +4,14 @@ const translations = {
         language:"Langue:",
         title_bio:"Biographie de Nonolbc1",
         h1_desc:"Description",
-        p1_desc:"Je fais des vidéos sur Youtube et Tiktok, parfois sur le thème de Minecraft, Rocket League, et rarement sur d'autres jeux. Mes passions sont de développer certains petits jeux ou logiciels. Je joue beaucoup aux jeux vidéos, je modélise certaines choses et j'aime bien faire du sport (de l'escalade, du basket, etc...)."
+        p1_desc:"Je fais des vidéos sur Youtube et Tiktok sur le thème de Minecraft. Mes passions sont de développer certains petits jeux ou logiciels. Je joue beaucoup aux jeux vidéos, je modélise certaines choses et j'aime bien faire du sport (de l'escalade, du basket, etc...)."
     },
     en: {
         title:"Website by ©Nonolbc1",
         language:"Language:",
         title_bio:"Biography of Nonolbc1",
         h1_desc:"Description",
-        p1_desc:"I make videos on Youtube and Tiktok, sometimes on the theme of Minecraft, Rocket League, and rarely on other games. My passions are developing certain small games or software. I play a lot of video games, I model certain things and I like to do sports (climbing, basketball, etc...)."
+        p1_desc:"I make videos on Youtube and Tiktok on the theme of Minecraft. My passions are developing certain small games or software. I play a lot of video games, I model certain things and I like to do sports (climbing, basketball, etc...)."
     }
 }
 
