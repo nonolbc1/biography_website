@@ -68,7 +68,7 @@ select {
 }
 
 .social-network {
-    border: 1px solid #ff0000;
+    border: 1px solid #ff000094;
     padding: 20px;
     margin: 20px auto;
     max-width: 400px;
@@ -82,13 +82,14 @@ select {
         0 0 1px #ff0000,
         0 0 5px #ff0000;
 
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s, border 0.5s, box-shadow 0.5s;
 }
 
 .social-network:hover {
-  background-color: #1a1a1a;
+  background-color: #272727;
   transform: scale(1.02);
-  box-shadow: 0 0 10px #ff0033;
+  box-shadow: 0 0 10px #ffee00;
+  border: 1px solid #ffee0094;
 }
 
 .text {
