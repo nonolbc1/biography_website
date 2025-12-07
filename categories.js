@@ -1,9 +1,1 @@
-function showContent(id, element) {
-    document.querySelectorAll('.content').forEach(div => {
-        div.classList.remove('active');
-    });
-    document.getElementById(id).classList.add('active');
-
-    document.querySelectorAll('.cat').forEach(c => c.classList.remove('active'));
-    element.classList.add('active');
-}
+function showContent(e,t){document.querySelectorAll(".content").forEach(e=>{e.classList.remove("active")}),document.getElementById(e).classList.add("active"),document.querySelectorAll(".cat").forEach(e=>e.classList.remove("active")),t.classList.add("active")}
