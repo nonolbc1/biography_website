@@ -2,60 +2,252 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta name="copyright" content="© 2025 Nonolbc1">
         <title>Bio</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="global.css">
     </head>
     <body>
-        <header>
-            <div id="title">
-                <span id="_00000">Site internet par &#169;Nonolbc1</span>
-            </div>
-            <div id="langue-selector">
-                <span id="_00001">Langue: </span>
-                <select name="LanguageSelector">
-                    <option value="fr">Français</option>
-                    <option value="en">English</option>
-                </select>
-            </div>
-        </header>
+        <div class="top-menu">
+            <div class="cat active" onclick="showContent('social_networks', this)" data-i18n="categorie1">Réseaux sociaux</div>
+            <div class="cat" onclick="showContent('me', this)" data-i18n="categorie2">Moi</div>
+            <div class="cat" onclick="showContent('what_i_use', this)" data-i18n="categorie3">Ce que j'utilise</div>
+            <select class="lang-select" id="lang">
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
 
-        <main class="content">
-            <h1 class="title" id="_00002">Biographie de Nonolbc1</h1>
-
-            <div id="desc">
-                <h2 id="_00003">Description</h2>
-                <p1 id="_00004">Je fais des vidéos sur Youtube et Tiktok sur le thème de Minecraft. Mes passions sont de développer certains petits jeux ou logiciels. Je joue beaucoup aux jeux vidéos, je modélise certaines choses et j'aime bien faire du sport (de l'escalade, du basket, etc...).</p1>
+        <!-- Réseaux sociaux -->
+        <div id="social_networks" class="content active">
+            <h1 class="cat-title" data-i18n="cat-title-1-social-networks">Mes réseaux</h1>
+            <div class="categories-social-networks">
+                <a href="https://discord.gg/Fq3qAbGuDy" class="social-network div-hover" target="_blank">
+                    <div class="row">
+                        <img src="img/discord.png" alt="Discord">
+                        <span>Discord</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/@nonolbc1?sub_confirmation=1" class="social-network div-hover" target="_blank">
+                    <div class="row">
+                        <img src="img/youtube.png" alt="YouTube">
+                        <span>YouTube</span>
+                    </div>
+                </a>
+                <a href="https://www.twitch.tv/@nonolbc1" class="social-network div-hover" target="_blank">
+                    <div class="row">
+                        <img src="img/twitch.png" alt="Twitch">
+                        <span>Twitch</span>
+                    </div>
+                </a>
+                <a href="https://www.curseforge.com/members/nonolbc1/projects" class="social-network div-hover" target="_blank">
+                    <div class="row">
+                        <img src="img/curseforge.png" alt="CurseForge">
+                        <span>CurseForge</span>
+                    </div>
+                </a>
+                <a href="https://www.tiktok.com/@nonolbc1?lang=fr" class="social-network div-hover" target="_blank">
+                    <div class="row">
+                        <img src="img/tiktok.png" alt="Tiktok">
+                        <span>Tiktok</span>
+                    </div>
+                </a>
+                <a href="https://github.com/nonolbc1" class="social-network div-hover" target="_blank">
+                    <div class="row">
+                        <img src="img/github.png" alt="Github">
+                        <span>Github</span>
+                    </div>
+                </a>
+            </div>
+            
+            <h1 class="cat-title" data-i18n="cat-title-2-social-networks">Mes chaînes YouTube</h1>
+            <div class="categories-social-networks">
+                <a href="https://www.youtube.com/@nonolbc1?sub_confirmation=1" class="social-network div-hover" target="_blank">
+                    <div class="row">
+                        <img class="youtube-profile" src="img/YT/nono.png" alt="@nonolbc1">
+                        <span>Nono</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/@nonolbc1Musique?sub_confirmation=1" class="social-network div-hover" target="_blank">
+                    <div class="row">
+                        <img class="youtube-profile" src="img/YT/nono musique.png" alt="@nonolbc1Musique">
+                        <span>Nono Musique</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/@Dev_Nono?sub_confirmation=1" class="social-network div-hover" target="_blank">
+                    <div class="row">
+                        <img class="youtube-profile" src="img/YT/dev nono.png" alt="@Dev_Nono">
+                        <span>Dev Nono</span>
+                    </div>
+                </a>
             </div>
 
-            <div id="socials-networks">
-                <a href="https://discord.gg/Fq3qAbGuDy" class="social-network" target="_blank">
-                    <img class="img" src="img/discord.png" alt="Discord">
-                    <span class="text">Discord</span>
+            <h1 class="cat-title" data-i18n="cat-title-3-social-networks">Mes amis</h1>
+            <div class="categories-social-networks">
+                <a href="https://www.youtube.com/@HorizyonYT?sub_confirmation=1" class="social-network div-hover" target="_blank">
+                    <div class="row">
+                        <img class="youtube-profile" src="img/YT/horizyon.jpg" alt="@HorizyonYT">
+                        <span>Horizyon</span>
+                    </div>
                 </a>
-                <a href="https://www.youtube.com/@nonolbc1" class="social-network" target="_blank">
-                    <img class="img" src="img/youtube.png" alt="YouTube">
-                    <span class="text">YouTube</span>
+                <a href="https://www.youtube.com/@sema-bs4?sub_confirmation=1" class="social-network div-hover" target="_blank">
+                    <div class="row">
+                        <img class="youtube-profile" src="img/YT/sema.jpg" alt="@sema-bs4">
+                        <span>Sema</span>
+                    </div>
                 </a>
-                <a href="https://www.tiktok.com/@nonolbc1" class="social-network" target="_blank">
-                    <img class="img" src="img/tiktok.png" alt="TikTok">
-                    <span class="text">TikTok</span>
+                <a href="https://www.youtube.com/@Sleimousse" class="social-network div-hover" target="_blank">
+                    <div class="row">
+                        <img class="youtube-profile" src="img/YT/slein.jpg" alt="@Sleimousse">
+                        <span>Slein</span>
+                    </div>
                 </a>
-                <a href="https://www.twitch.tv/@nonolbc1" class="social-network" target="_blank">
-                    <img class="img" src="img/twitch.png" alt="Twitch">
-                    <span class="text">Twitch</span>
-                </a>
-                <a href="https://www.curseforge.com/members/nonolbc1/projects" class="social-network" target="_blank">
-                    <img class="img" src="img/curseforge.png" alt="CurseForge">
-                    <span class="text">CurseForge</span>
-                </a>
-                <a href="https://github.com/nonolbc1" class="social-network" target="_blank">
-                    <img class="img" src="img/github.png" alt="GitHub">
-                    <span class="text">GitHub</span>
-                </a>
-                <a id="_00005", href="https://github.com/nonolbc1/bio" target="_blank", style="text-decoration: none; color: #9090ff;">Code source</a>
             </div>
-        </main>
+            
+            <footer>
+                <h6>© 2025 Nonolbc1</h6>
+            </footer>
+        </div>
 
+        <!-- Passions -->
+        <div id="me" class="content">
+            <h1 class="cat-title" data-i18n="cat-title-1-me">Sur les réseaux</h1>
+            <div class="categories-me">
+                <p class="description div-hover" data-i18n="cat-desc-1">
+                    J'aime faire des vidéos <a onclick="showContent('social_networks', this)">YouTube</a>, publié mes shorts sur <a onclick="showContent('social_networks', this)">TikTok</a>
+                    <br>et tourner des vidéos avec <a onclick="showContent('social_networks', this)">Horizyon</a> par exemple.
+                    <br>J'ai un serveur <a href="https://discord.gg/Fq3qAbGuDy">Discord</a> dans le quelle j'aime faire des évènements,
+                    <br>comme des concours, notifiés ma communautée d'une nouvelle vidéo,
+                    <br>ou autres choses, n'hésitez pas à passer sur le serveur !
+                </p>
+            </div>
+
+            <h1 class="cat-title" data-i18n="cat-title-2-me">Entre amis</h1>
+            <div class="categories-me">
+                <p class="description div-hover" data-i18n="cat-desc-2">
+                    Vous pouvez trouvez mes amis sur la page <a onclick="showContent('social_networks', this)">"Réseaux sociaux"</a>.
+                    <br>Avec eux j'aime bien joué à <a onclick="showContent('what_i_use', this)">plusieurs jeux</a>, comme <a onclick="showContent('what_i_use', this)">Valorant</a>, <a onclick="showContent('what_i_use', this)">Minecraft</a>,
+                    <br><a onclick="showContent('what_i_use', this)">BeamNG.Drive</a>, etc. Je les aides dans certaines tâches trop techniques
+                    <br>comme un besoin de programmation ou de commandes dans <a onclick="showContent('what_i_use', this)">Minecraft</a>.
+                    <br>On fait des vidéos enssembles et les postes sur <a onclick="showContent('social_networks', this)">YouTube</a>, et <a onclick="showContent('social_networks', this)">TikTok</a>.
+                </p>
+            </div>
+            <h1 class="cat-title" data-i18n="cat-title-3-me">Développement</h1>
+            <div class="categories-me">
+                <p class="description div-hover" data-i18n="cat-desc-3">
+                    J'aime bien développer des petits logiciel, ou même des plugins/addons.
+                    <br>Généralement, je code avec <a onclick="showContent('what_i_use', this)">Visual Studio Code</a>, avec le quel je code
+                    <br>en ce momment même. Mais j'utilise autrement d'autres logiciels, tel que
+                    <br><a onclick="showContent('what_i_use', this)">Intellij IDEA</a> pour du <a onclick="showContent('what_i_use', this)">Java</a>, ou même le bloc-notes directement.
+                </p>
+            </div>
+
+            <h1 class="cat-title" data-i18n="cat-title-4-me">IRL</h1>
+            <div class="categories-me">
+                <p class="description div-hover" data-i18n="cat-desc-4">
+                    Je suis un étudiant intéresser par la Cybersécurité dans le pentesting
+                    <br>(Majoritairement le souhait de tous ceux intéresser par ça). J'étudie donc
+                    <br>la programmation, la cybersécurité etc. IRL je n'aime pas trop sortir pour
+                    <br>aller voir mes amis (Je suis un modo discord...), je passe donc mes
+                    <br>journées à sois tourner des vidéos, sois jouer avec mes amis sur internet.
+                    <br>J'ai aussi d'autre passions IRL, comme l'électicité (Circuit électronique
+                    <br>ou même des installations basses/hautes tensions), faire du sport,
+                    <br>et même regarder tous ce qui est course automobile
+                    <br>(Principalement F1/F4).
+                </p>
+            </div>
+            
+            <footer>
+                <h6>© 2025 Nonolbc1</h6>
+            </footer>
+        </div>
+
+        <div id="what_i_use" class="content">
+            <h1 class="cat-title" data-i18n="cat-title-1-what-i-use">Jeux</h1>
+            <div class="categories-what-i-use">
+                <a href="https://www.minecraft.net/" class="square div-hover">
+                    <img src="img/WIUSE/Games/minecraft.png" alt="Minecraft">
+                </a>
+                <a href="https://playvalorant.com/" class="square div-hover">
+                    <img src="img/WIUSE/Games/valorant.png" alt="Valorant">
+                </a>
+                <a href="https://www.beamng.com/game/" class="square div-hover">
+                    <img src="img/WIUSE/Games/beamng.png" alt="BeamNG.Drive">
+                </a>
+                <a href="https://store.steampowered.com/app/739630/Phasmophobia/" class="square div-hover">
+                    <img src="img/WIUSE/Games/phasmophobia.png" alt="Phasmophobia">
+                </a>
+                <a href="https://store.steampowered.com/app/387990/Scrap_Mechanic/" class="square div-hover">
+                    <img src="img/WIUSE/Games/scrap-mechanic.png" alt="Scrap Mechanic">
+                </a>
+                <a href="https://www.rocketleague.com/" class="square div-hover">
+                    <img src="img/WIUSE/Games/rocket league.png" alt="Rocket League">
+                </a>
+                <a href="https://www.roblox.com/" class="square div-hover">
+                    <img src="img/WIUSE/Games/roblox.png" alt="Roblox">
+                </a>
+            </div>
+
+            <h1 class="cat-title" data-i18n="cat-title-2-what-i-use">Logiciels</h1>
+            <div class="categories-what-i-use">
+                <a href="https://www.adobe.com/products/premiere.html" class="square div-hover">
+                    <img src="img/WIUSE/Softwares/premiere pro.png" alt="Adobe Premiere Pro">
+                </a>
+                <a href="https://code.visualstudio.com/" class="square div-hover">
+                    <img src="img/WIUSE/Softwares/visual studio code.png" alt="Visual Studio Code">
+                </a>
+                <a href="https://www.jetbrains.com/idea/" class="square div-hover">
+                    <img src="img/WIUSE/Softwares/intellij idea.png" alt="Intellij IDEA">
+                </a>
+                <a href="https://store.steampowered.com/about/" class="square div-hover">
+                    <img src="img/WIUSE/Softwares/steam.png" alt="Steam">
+                </a>
+                <a href="https://www.curseforge.com/download/app" class="square div-hover">
+                    <img src="img/WIUSE/Softwares/curseforge.png" alt="Curseforge">
+                </a>
+                <a href="https://www.image-line.com/" class="square div-hover">
+                    <img src="img/WIUSE/Softwares/fl studio.png" alt="FL Studio">
+                </a>
+                <a href="https://discord.com/" class="square div-hover">
+                    <img src="img/WIUSE/Softwares/discord.png" alt="Discord">
+                </a>
+                <a href="https://www.photopea.com/" class="square div-hover">
+                    <img src="img/WIUSE/Softwares/photopea.png" alt="Photopea">
+                </a>
+                <a href="https://www.blender.org/download/" class="square div-hover">
+                    <img src="img/WIUSE/Softwares/blender.png" alt="Blender">
+                </a>
+            </div>
+
+            <h1 class="cat-title" data-i18n="cat-title-3-what-i-use">Languages de programmation</h1>
+            <div class="categories-what-i-use">
+                <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" class="square div-hover">
+                    <img src="img/WIUSE/ProgLanguage/html.png" alt="HTML">
+                </a>
+                <a href="https://fr.wikipedia.org/wiki/Cascading_Style_Sheets" class="square div-hover">
+                    <img src="img/WIUSE/ProgLanguage/css.png" alt="CSS">
+                </a>
+                <a href="https://fr.wikipedia.org/wiki/JavaScript" class="square div-hover">
+                    <img src="img/WIUSE/ProgLanguage/javascript.png" alt="JavaScript">
+                </a>
+                <a href="https://www.java.com/" class="square div-hover">
+                    <img src="img/WIUSE/ProgLanguage/java.png" alt="Java">
+                </a>
+                <a href="https://fr.wikipedia.org/wiki/C++" class="square div-hover">
+                    <img src="img/WIUSE/ProgLanguage/c++.png" alt="C++">
+                </a>
+                <a href="https://www.lua.org/download.html" class="square div-hover">
+                    <img src="img/WIUSE/ProgLanguage/lua.png" alt="Lua">
+                </a>
+                <a href="https://www.python.org/downloads/" class="square div-hover">
+                    <img src="img/WIUSE/ProgLanguage/python.png" alt="Python">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Windows_Registry" class="square div-hover">
+                    <img src="img/WIUSE/ProgLanguage/registry.png" alt="Registry">
+                </a>
+            </div>
+        </div>
+
+        <script src="categories.js"></script>
         <script src="language.js"></script>
     </body>
 </html>
